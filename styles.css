@@ -1,0 +1,40 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+p {
+    margin: auto;
+}
+
+#infoGasto {
+    margin-bottom: 10px;
+}
+
+#personasGasto {
+    margin-bottom: 10px;
+}
+
+#prueba {
+    display: none;
+}
+
+.btn-danger {
+    margin-right: 0;
+}
+
+#btnSimular {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.8em;
+}
+
+#btnsGastos {
+    display: flex;
+    justify-content: space-around;
+}
