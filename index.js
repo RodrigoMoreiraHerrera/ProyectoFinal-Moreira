@@ -219,12 +219,13 @@ btnSimular.onclick  = () => {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then((data) => {
-            data.forEach((users) => {personas.push(new persona(users.name, 0))})
-//            console.log(data)
-//            console.log(personas)
-            pintarpersonasCheckbox ();
-            pintarResultado();
-            pintarGastosTabla();
+            data.forEach((users) => {
+                let verificador = personas.some((elemento) => elemento.nombre == users.name);
+                if (!verificador){personas.push(new persona(users.name, 0))}
+        })
+        pintarpersonasCheckbox ();
+        pintarResultado();
+        pintarGastosTabla();
         }
         )
 }
